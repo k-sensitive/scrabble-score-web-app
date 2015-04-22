@@ -27,10 +27,10 @@ class String
                       'Q' => 10,
                       'Z' => 10 }
     letters = self.upcase!.split("")
-    sum = 0
+    score = 0
     letters.each() do |letter|
-      sum += letter_scores.fetch(letter)
+      score += letter_scores.fetch(letter)
     end
-    sum
+    score
   end
 end
